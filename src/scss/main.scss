@@ -1,0 +1,51 @@
+@import "./theme/variables.scss";
+@import "~antd/dist/antd.css";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e6eb;
+}
+
+.dr-background-primary {
+  background-color: $font-color-blue;
+}
+
+#root {
+  overflow: hidden;
+  height: 100%;
+}
+#root .dr-text-primary {
+  color: $font-color-blue;
+}
+
+#root .dr-text-secondary {
+  color: $active-color;
+}
+
+.dr-background-secondary {
+  background-color: $active-color;
+}
+
+.box-wrapper {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 100%;
+}
+
+.main-box {
+  height: 100%;
+  background-color: white;
+  padding: 16px;
+}
+
+.ant-modal-root {
+  .property-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}

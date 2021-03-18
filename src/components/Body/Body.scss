@@ -1,0 +1,8 @@
+@import "../../scss/theme/variables.scss";
+
+#body {
+  &.body-container {
+    height: calc(100% - 57px);
+    margin-top: 57px;
+  }
+}

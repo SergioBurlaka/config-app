@@ -1,0 +1,77 @@
+@import "../../scss/theme/variables.scss";
+
+#add-new-config {
+  height: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  .input-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 12px;
+  }
+  .radio-line {
+    .radio-title {
+      margin-right: 40px;
+    }
+
+    margin-bottom: 16px;
+  }
+
+  .input-box {
+    width: 100%;
+    margin-right: 12px;
+    .input-label {
+      margin-bottom: 5px;
+    }
+  }
+
+  .add-property-button {
+    color: $font-color-white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    cursor: pointer;
+
+    &.disabled {
+      cursor: not-allowed;
+      background-color: $font-color-disabled;
+
+      &:hover {
+        background-color: $font-color-disabled;
+      }
+    }
+
+    &:hover {
+      background-color: $brand-blue-light-1;
+    }
+  }
+
+  .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .button-section {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .value-switcher-wrapper {
+    height: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  .new-config {
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+  }
+}

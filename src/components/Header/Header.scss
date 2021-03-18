@@ -1,0 +1,35 @@
+@import '../../scss/theme/variables.scss';
+
+#header {
+  background-color: $white;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 76, 0.1);
+  z-index: 10;
+
+  .munu-section-container {
+    display: flex;
+  }
+
+  .menu-wrapper {
+    .custom-link {
+      color: $header-text-color;
+      font-size: 16px;
+      text-decoration: none;
+      &.active {
+        background-color: $button-background-color;
+        color: $primary-color;
+      }
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+
+
+}
+
